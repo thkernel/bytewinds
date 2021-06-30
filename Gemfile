@@ -8,7 +8,8 @@ gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
-gem 'puma', '~> 4'
+#gem 'puma', '~> 4'
+gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -69,7 +70,7 @@ gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
 
 gem 'pg', '~> 1.1', '>= 1.1.4'
 gem 'sassc', '~> 2.0', '>= 2.0.1'
-gem 'bootstrap', '~> 4.3', '>= 4.3.1'
+#gem 'bootstrap', '~> 4.3', '>= 4.3.1'
 #gem 'bootstrap-sass', '~> 3.3.7'
 
 
@@ -87,7 +88,7 @@ gem 'kaminari', '~> 1.1', '>= 1.1.1'
 #gem 'chartkick', '~> 3.0', '>= 3.0.2'
 gem 'cocoon', '~> 1.2', '>= 1.2.12'
 #gem 'ckeditor', '~> 5.0'
-gem 'ckeditor', github: 'galetahub/ckeditor'
+#gem 'ckeditor', github: 'galetahub/ckeditor'
 #gem 'social-share-button', '~> 1.2', '>= 1.2.1'
 gem 'sanitize', '~> 5.1'
 gem 'creek', '~> 2.2'
@@ -114,7 +115,7 @@ group :development do
   gem 'capistrano-rvm', '~> 0.1.2'
 
   # For puma
-  #gem 'capistrano3-puma', '~> 3.1', '>= 3.1.1'
-  gem 'capistrano3-puma', '~> 5.0', '>= 5.0.4'
+  gem 'capistrano3-puma', '~> 3.1', '>= 3.1.1'
+  #gem 'capistrano3-puma', '~> 5.0', '>= 5.0.4'
   #gem 'capistrano3-puma', github: "seuros/capistrano-puma"
 end
