@@ -14,7 +14,7 @@ set :rails_env, "production"
 server "softwinds.me", user: "root", roles: %w{app db web}, ssh_options: {forward_agent: true}
 
 set :branch, "master"
-set :port, 3013
+set :port, 3033
 
 
 
