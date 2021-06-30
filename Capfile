@@ -48,7 +48,7 @@ install_plugin Capistrano::Puma::Workers  # if you want to control the workers (
 install_plugin Capistrano::Puma::Jungle # if you need the jungle tasks
 #install_plugin Capistrano::Puma::Monit  # if you need the monit tasks
 install_plugin Capistrano::Puma::Nginx  # if you want to upload a nginx site templat
-install_plugin Capistrano::Puma::Systemd
+#install_plugin Capistrano::Puma::Systemd
 #require 'capistrano/puma'
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
