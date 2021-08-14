@@ -59,6 +59,11 @@ body{
     bottom: 0;
 }
 
+.copyright{
+position: relative;
+    
+}
+
 .components-panel{
     border: 1px solid #e2e4e7;
     padding: 1em;
@@ -653,4 +658,31 @@ body {
 
 .page-wrapper{
     background-color: white !important;
+}
+
+.site-footer{
+    background-color: white;
+}
+
+
+.--highlight {
+    position: relative;
+    display: inline-block;
+}
+
+
+.--highlight::after {
+    content: "";
+    background: #ffe6ab;
+    width: 104%;
+    height: 20%;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    bottom: 8px;
+    left: 50%;
+    -webkit-transition: .4s ease-out;
+    transition: .4s ease-out;
+    -webkit-transform: translate3d(-50%,0,0);
+    transform: translate3d(-50%,0,0);
 }
