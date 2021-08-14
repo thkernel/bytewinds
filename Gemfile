@@ -71,8 +71,9 @@ gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
 gem 'pg', '~> 1.1', '>= 1.1.4'
 gem 'sassc', '~> 2.0', '>= 2.0.1'
 #gem 'bootstrap', '~> 4.3', '>= 4.3.1'
+gem 'bootstrap', '~> 5.0', '>= 5.0.1'
 #gem 'bootstrap-sass', '~> 3.3.7'
-gem 'tailwindcss-rails', '~> 0.3.3'
+
 
 
 gem 'rails-i18n', '~> 6.0'

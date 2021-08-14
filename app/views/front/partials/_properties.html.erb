@@ -1,0 +1,29 @@
+<div class="featured-properties">
+<div class="container">
+	<div class="google-ads">
+		<%= render "shared/ads/home_top_ads" %>
+	</div>
+	<div class="section-title text-center">
+		<h1>Propriétes à la une</h1>
+	</div>
+
+
+	<div class="row">
+
+		<% @properties.each do |property| %>
+
+            <div class="col-md-4 property-item">	
+                <%= render "shared/property/property", property: property %>	
+			</div>
+		<% end %> 
+	</div>
+
+	<div class="text-center">
+		<!-- <%= will_paginate @properties, previous_label: "Précédent",next_label: "Suivant",  renderer: BootstrapPagination::Rails, class: "pagination load-more-button" %> -->
+		<%= link_to "Voir plus", all_properties_path, class: "btn btn-outline-primary"%>
+	</div>
+	<div class="google-ads">
+		<%= render "shared/ads/home_bottom_ads" %>
+	</div>
+</div>
+</div>
