@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= display_meta_tags site: APPLICATION_NAME %>
+      <%= display_meta_tags description: APPLICATION_DESCRIPTION %>
+     <%= display_meta_tags keywords: APPLICATION_KEYWORDS %>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= render 'layouts/partials/google_analytics' %>
+
+
+
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <%= render("layouts/partials/front/header") %>
+      <div class="page-wrapper">
+        <%= yield %>
+      </div>
+
+  </body>
+</html>

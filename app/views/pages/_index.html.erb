@@ -1,0 +1,19 @@
+ <% @pages.each do |page| %>
+    <tr>
+    
+    <td><%= page.title %></td>
+    
+    <td>
+            <div class="action-buttons">
+                    <%= link_to raw('<i class="fa fa-pencil" aria-hidden="true"></i>
+'), edit_page_path(page), title: "Modifier", remote: false %>
+
+
+
+
+<%= link_to raw('<i class="fa fa-trash-o" aria-hidden="true"></i>
+'), page_delete_path(page), remote: true, title: "Supprimer", class: "delete" %>
+</div>
+        </td>
+    </tr>
+<% end %>

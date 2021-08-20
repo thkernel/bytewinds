@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= "Tableau de bord - #{APPLICATION_NAME}" %></title>	
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag "application", "data-turbo-track": "reload" %>
+	<%= stylesheet_pack_tag Ckeditor.cdn_url %>
+
+		<%= render 'layouts/partials/google_analytics' %>
+
+	</head>
+
+  <body >
+		
+		<%= render :partial => 'layouts/partials/flash_messages', :flash => flash %>
+		<!-- Left Sidebar -->
+			<%= render('layouts/partials/dashboard/header') %>
+
+		<!-- End Left sidebar -->
+<%= render('layouts/partials/dashboard/sidebar') %>
+		<div class="br-mainpanel">
+				<% unless smtp_config?  %>	
+		<%= render 'layouts/partials/smtp_config_alert' %>
+		<% end %>
+
+					<%= yield %>
+				  
+
+		</div>
+	 
+
+	
+  </body>
+</html>

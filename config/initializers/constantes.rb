@@ -1,6 +1,6 @@
 APPLICATION_NAME = "Softwinds"
-APPLICATION_SLOGAN = "Easy and fastly"
-APPLICATION_DESCRIPTION = "Embarquez votre entreprise"
+APPLICATION_SLOGAN = "Building together"
+APPLICATION_DESCRIPTION = "Full stack software company"
 APPLICATION_KEYWORDS = [""]
 
 GENDERS = [["Homme"], ["Femme"]]

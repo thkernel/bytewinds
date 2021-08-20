@@ -1,0 +1,19 @@
+<% title @page.title %>
+<% description @page.content %>
+
+<div class="container mb-60 mg-t-80">
+	<div class="advertise-content mt-30 mb-30"></div>
+
+		<div class="box box-primary">
+  			
+			<h1 class="box-header"><%= @page.title if @page.present? %></h1>
+			<div class="panel-body">
+				<p>
+					<%= @page.content.html_safe if @page.present? %>
+					
+				</p>
+
+			</div>
+		</div>
+	</div>
+</div>
