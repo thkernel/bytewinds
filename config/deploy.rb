@@ -4,8 +4,8 @@ lock "~> 3.16.0"
 set :stages, %w(production staging)
 set :default_stage, "production"
 
-set :application, "softwinds"
-set :repo_url, "https://github.com/thkernel/softwinds.git"
+set :application, "bytewinds"
+set :repo_url, "https://github.com/thkernel/bytewinds.git"
 #set :ssh_options, { auth_methods: %w(password), password: "AMOSXZIBITDE88" }
 
 # Default branch is :master
