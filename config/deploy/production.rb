@@ -10,7 +10,7 @@ set :application, "bytewinds.prod"               # the name of your website - sh
 set :deploy_to, "/home/ubuntu/apps/rails/bytewinds/bytewinds.prod"   # the path to your new deployment directory on the server - by default, the name of the application (e.g. "/var/www/sites/example.com")
 set :rails_env, "production"
 
-server "51.38.235.131", user: "root", roles: %w{app db web}, ssh_options: {forward_agent: true}
+server "34.194.147.50", user: "ubuntu", roles: %w{app db web}, ssh_options: {forward_agent: true}
 #server "softwinds.me", user: "root", roles: %w{app db web}, ssh_options: {forward_agent: true}
 
 set :branch, "master"
@@ -75,9 +75,9 @@ set :port, 3033
 #   }
 
 
-#set :pty, true
-#set :ssh_options, {
-  #forward_agent: true,
-  #auth_methods: ["publickey"],
-  #keys: ["~/cleGedwinUbuntu.pem"]
-#}
+set :pty, true
+set :ssh_options, {
+  forward_agent: true,
+  auth_methods: ["publickey"],
+  keys: ["~/bytewinds.pem"]
+}

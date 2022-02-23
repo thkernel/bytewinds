@@ -114,7 +114,8 @@ group :development do
   gem 'capistrano-rails', '~> 1.3', '>= 1.3.1'
   gem 'capistrano-rails-collection', '~> 0.1.0'
   # For rvm
-  gem 'capistrano-rvm', '~> 0.1.2'
+  #gem 'capistrano-rvm', '~> 0.1.2'
+  gem 'capistrano-rbenv', '~> 2.2'
 
   # For puma
   gem 'capistrano3-puma', '~> 3.1', '>= 3.1.1'
